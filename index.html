@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <title>Calculator</title>
+        
+    </head>
+    <body>
+        <section id="heading">
+            <h1>Calculator App</h1>
+        </section>
+        <section id="calc">
+            <div class="calculator">
+                <div class="user-input">
+                    <p class="expression" id="expression"></p>
+                    <p class="result" id="result"></p>
+                </div>
+                <div class="row">
+                    <button type="button" class="btn" onclick="addValue('%')">%</button>
+                    <button type="button" class="btn" onclick="clearEntry()">CE</button>
+                    <button type="button" class="btn" onclick="clearAll()">C</button>
+                    <button type="button" class="btn" onclick="backSpace()">&#9003;</button>
+                </div>
+                <div class="row">
+                    <button type="button" class="btn" onclick="addValue(7)">7</button>
+                    <button type="button" class="btn" onclick="addValue(8)">8</button>
+                    <button type="button" class="btn" onclick="addValue(9)">9</button>
+                    <button type="button" class="btn" onclick="addValue('*', '&#120;')">&#120;</button>
+                </div>
+                <div class="row">
+                    <button type="button" class="btn" onclick="addValue(4)">4</button>
+                    <button type="button" class="btn" onclick="addValue(5)">5</button>
+                    <button type="button" class="btn" onclick="addValue(6)">6</button>
+                    <button type="button" class="btn" onclick="addValue('-')">&#8722;</button>
+                </div>
+                <div class="row">
+                    <button type="button" class="btn" onclick="addValue(1)">1</button>
+                    <button type="button" class="btn" onclick="addValue(2)">2</button>
+                    <button type="button" class="btn" onclick="addValue(3)">3</button>
+                    <button type="button" class="btn" onclick="addValue('+')">&plus;</button>
+                </div>
+                <div class="row">
+                    <button type="button" class="btn" onclick="addValue('/', '&#247;')">&#247;</button>
+                    <button type="button" class="btn" onclick="addValue(0)">0</button>
+                    <button type="button" class="btn" onclick="addValue('.')">.</button>
+                    <button type="button" class="btn" onclick="addValue('=')">=</button>
+                </div>
+            </div>
+        </section>
+        <script src="assets/js/app.js"></script>
+    </body>
+</html>
